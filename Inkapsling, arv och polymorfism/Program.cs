@@ -4,10 +4,14 @@
     {
         static void Main(string[] args)
         {
+            // 3.1
             try
             {
                 PersonHandler personHandler = new();
-                Person person = personHandler.CreatePerson(28, "Kevin", "Garcia Martin", 1.94, 95);
+                Person person1 = personHandler.CreatePerson(28, "Kevin", "Garcia Martin", 1.94, 95);
+                //Person person2 = personHandler.CreatePerson(0, "Baby", "Blue", 0.45, 0.41);
+                //Person person3 = personHandler.CreatePerson(77, "B", "Larsson", 1.63, 78);
+                //Person person4 = personHandler.CreatePerson(52, "Anja", "Peeeeeeeeeeeeeeeeeeeeeeeeeeersson", 1.72, 80);
             }
             catch (ArgumentException aex)
             {
