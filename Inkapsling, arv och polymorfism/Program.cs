@@ -6,9 +6,8 @@
         {
             try
             {
-                Person person = new("Kevin", "Garcia Martin");
-                PersonHandler age = new();
-                age.SetAge(person, 28);
+                PersonHandler personHandler = new();
+                Person person = personHandler.CreatePerson(28, "Kevin", "Garcia Martin", 1.94, 95);
             }
             catch (ArgumentException aex)
             {

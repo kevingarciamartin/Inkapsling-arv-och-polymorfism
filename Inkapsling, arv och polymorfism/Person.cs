@@ -61,8 +61,8 @@ namespace Inkapsling__arv_och_polymorfism
         // Constructors
         public Person(string fName, string lName) 
         {
-            FName = fName;
-            LName = lName;
+            FName = fName ?? string.Empty;
+            LName = lName ?? string.Empty;
         }
     }
 }
