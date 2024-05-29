@@ -59,24 +59,10 @@ namespace Inkapsling__arv_och_polymorfism
         }
 
         // Constructors
-        public Person(string? fName, string? lName) 
+        public Person(string fName, string lName) 
         {
             FName = fName;
             LName = lName;
-        }
-
-        // Methods
-        public void setAge(uint age)
-        {
-            Age = age;
-        }
-        public void setHeight(double height)
-        {
-            Height = height;
-        }
-        public void setWeight(double weight)
-        {
-            Weight = weight;
         }
     }
 }

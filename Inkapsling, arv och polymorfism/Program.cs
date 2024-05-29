@@ -7,12 +7,14 @@
             try
             {
                 Person person = new("Kevin", "Garcia Martin");
-                person.setAge(28);
+                PersonHandler age = new();
+                age.SetAge(person, 28);
             }
             catch (ArgumentException aex)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine(aex.Message);
+                //Console.WriteLine(aex.StackTrace);
             }
             finally
             {
