@@ -22,5 +22,10 @@ namespace Inkapsling__arv_och_polymorfism
         public bool LayEggs { get; set; }
 
         public abstract void DoSound();
+
+        public virtual string Stats()
+        {
+            return $"Weight: {Weight}, Speed: {Speed}, IsWarmBlooded: {IsWarmBlooded}, LayEggs: {LayEggs}";
+        }
     }
 }

@@ -19,5 +19,14 @@ namespace Inkapsling__arv_och_polymorfism
         {
             Console.WriteLine("Howl");
         }
+
+        public override string Stats()
+        {
+            return $"Weight: {Weight}, " +
+                $"Speed: {Speed}, " +
+                $"IsWarmBlooded: {IsWarmBlooded}, " +
+                $"LayEggs: {LayEggs}, " +
+                $"Characteristic: {Characteristic}";
+        }
     }
 }

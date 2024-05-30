@@ -52,26 +52,7 @@
             // 3.3
             Console.WriteLine("3.3");
             Console.WriteLine("---");
-
-            List<Animal> animals = new();
-
-            animals.Add(new Horse(90, 70, true, false));
-            animals.Add(new Dog(20, 30, true, false));
-            animals.Add(new Hedgehog(2, 1, true, false));
-            animals.Add(new Worm(0.1, 0.1, false, true));
-            animals.Add(new Bird(5, 20, true, true));
-            animals.Add(new Wolf(60, 60, true, false));
-            animals.Add(new Pelican(10, 10, true, true));
-            animals.Add(new Flamingo(8, 9, true, true));
-            animals.Add(new Swan(6, 5, true, true));
-            var wolfman = new Wolfman(75, 50, true, false);
-
-            foreach (var animal in animals)
-            {
-                animal.DoSound();
-            }
-
-            wolfman.Talk();
+            Console.WriteLine();
 
             /* Frågor 
              * 
@@ -86,6 +67,36 @@
              * 
              * Då lägger vi det i Animal-klassen.
              */
+
+            //3.4
+            Console.WriteLine("3.4");
+            Console.WriteLine("---");
+
+            List<Animal> animals = new();
+
+            animals.Add(new Horse(90, 70, true, false));
+            animals.Add(new Dog(20, 30, true, false));
+            animals.Add(new Hedgehog(2, 1, true, false));
+            animals.Add(new Worm(0.1, 0.1, false, true));
+            animals.Add(new Bird(5, 20, true, true));
+            animals.Add(new Wolf(60, 60, true, false));
+            animals.Add(new Pelican(10, 10, true, true));
+            animals.Add(new Flamingo(8, 9, true, true));
+            animals.Add(new Swan(6, 5, true, true));
+            animals.Add(new Wolfman(75, 50, true, false));
+
+            foreach (var animal in animals)
+            {
+                Console.WriteLine(animal.GetType().Name);
+                Console.WriteLine(animal.Stats());
+                if (animal is IPerson)
+                    (animal as IPerson)?.Talk();
+                else
+                    animal.DoSound();
+                Console.WriteLine();
+            }
+
+            List<Dog> dogs = new();
         }
     }
 }
