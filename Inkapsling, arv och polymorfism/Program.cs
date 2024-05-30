@@ -8,6 +8,7 @@
             try
             {
                 PersonHandler personHandler = new();
+
                 Person person1 = personHandler.CreatePerson(28, "Kevin", "Garcia Martin", 1.94, 95);
                 //Person person2 = personHandler.CreatePerson(0, "Baby", "Blue", 0.45, 0.41);
                 //Person person3 = personHandler.CreatePerson(77, "B", "Larsson", 1.63, 78);
@@ -26,8 +27,12 @@
 
             // 3.2
             List<UserError> userErrors = new();
+
             userErrors.Add(new NumericInputError());
             userErrors.Add(new TextInputError());
+            userErrors.Add(new WhiteSpaceInputError());
+            userErrors.Add(new TabInputError());
+            userErrors.Add(new DeleteDataBaseError());
 
             foreach (var userError in userErrors)
             {
