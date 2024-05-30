@@ -28,5 +28,10 @@ namespace Inkapsling__arv_och_polymorfism
                 $"LayEggs: {LayEggs}, " +
                 $"Characteristic: {Characteristic}";
         }
+
+        public string PetDog()
+        {
+            return "*Petting the dog*";
+        }
     }
 }
