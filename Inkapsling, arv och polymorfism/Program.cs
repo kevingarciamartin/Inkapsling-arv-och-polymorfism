@@ -89,14 +89,45 @@
             {
                 Console.WriteLine(animal.GetType().Name);
                 Console.WriteLine(animal.Stats());
-                if (animal is IPerson)
-                    (animal as IPerson)?.Talk();
+
+                if (animal is Dog)
+                    //    Console.WriteLine(animal.Stats());
+                    Console.WriteLine((animal as Dog)!.PetDog());
+
+                    if (animal is IPerson)
+                    (animal as IPerson)!.Talk();
                 else
                     animal.DoSound();
+                
                 Console.WriteLine();
             }
 
-            List<Dog> dogs = new();
+            //List<Dog> dogs = new();
+
+            //dogs.Add(new Horse(80, 65, true, false));
+
+            /* Frågor
+             * 
+             * Försök att lägga till en häst i listan av hundar. Varför fungerar inte det?
+             * 
+             * Listan får bara innehålla instanser av hundar, vilket en häst inte är.
+             * 
+             * 
+             * Vilken typ måste listan vara för att alla klasser skall kunna lagras tillsammans?
+             * 
+             * Den måste vara av typ Animal.
+             * 
+             * 
+             * Skriv ut samtliga Animals Stats() genom en foreach loop. Förklara vad det är som händer.
+             * 
+             * Objektet animal anropar sin Stats()-metod som returnerar en sträng med information om djuret.
+             * 
+             * 
+             * Skapa en ny metod med valfritt namn i klassen Dog som endast returnerar en valfri sträng. 
+             * Kommer du åt den metoden från Animals listan? Varför inte?
+             * 
+             * Metoden är bara tillgänglig för klassen Dog, inte alla andra djur.
+             */
         }
     }
 }
