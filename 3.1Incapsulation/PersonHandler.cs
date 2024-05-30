@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Inkapsling__arv_och_polymorfism
+namespace _3._1Incapsulation
 {
-    internal class PersonHandler
+    public class PersonHandler
     {
         public Person CreatePerson(uint age, string fName, string lName, double height, double weight)
         {

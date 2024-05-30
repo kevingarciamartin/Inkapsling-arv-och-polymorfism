@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Inkapsling__arv_och_polymorfism
+namespace _3._1Incapsulation
 {
-    internal class Person
+    public class Person
     {
         // Private fields
         private uint _age;
