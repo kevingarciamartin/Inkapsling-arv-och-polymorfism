@@ -72,6 +72,20 @@
             }
 
             wolfman.Talk();
+
+            /* Frågor 
+             * 
+             * Om vi under utvecklingen kommer fram till att samtliga fåglar behöver ett nytt attribut,
+             * i vilken klass bör vi lägga det?
+             * 
+             * Vi lägger det i Bird-klassen.
+             * 
+             * -----
+             * 
+             * Om alla djur behöver det nya attributet, vart skulle man lägga det då?
+             * 
+             * Då lägger vi det i Animal-klassen.
+             */
         }
     }
 }
