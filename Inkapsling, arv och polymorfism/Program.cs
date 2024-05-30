@@ -61,6 +61,9 @@
             animals.Add(new Worm(0.1, 0.1, false, true));
             animals.Add(new Bird(5, 20, true, true));
             animals.Add(new Wolf(100, 30, true, false));
+            animals.Add(new Pelican(10, 10, true, true));
+            animals.Add(new Flamingo(8, 9, true, true));
+            animals.Add(new Swan(6, 5, true, true));
 
             foreach (var animal in animals)
             {
