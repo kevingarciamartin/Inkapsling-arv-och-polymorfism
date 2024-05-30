@@ -23,6 +23,16 @@
             {
                 Console.ResetColor();
             }
+
+            // 3.2
+            List<UserError> userErrors = new();
+            userErrors.Add(new NumericInputError());
+            userErrors.Add(new TextInputError());
+
+            foreach (var userError in userErrors)
+            {
+                Console.WriteLine(userError.UEMessage());
+            }
         }
     }
 }
