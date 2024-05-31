@@ -112,14 +112,17 @@ List<Dog> dogs = new();
  * Listan får bara innehålla instanser av hundar, vilket en häst inte är.
  * 
  * 
+ * 
  * Vilken typ måste listan vara för att alla klasser skall kunna lagras tillsammans?
  * 
  * Den måste vara av typ Animal.
  * 
  * 
+ * 
  * Skriv ut samtliga Animals Stats() genom en foreach loop. Förklara vad det är som händer.
  * 
  * Objektet animal anropar sin Stats()-metod som returnerar en sträng med information om djuret.
+ * 
  * 
  * 
  * Skapa en ny metod med valfritt namn i klassen Dog som endast returnerar en valfri sträng. 
