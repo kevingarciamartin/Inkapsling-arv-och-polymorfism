@@ -81,7 +81,7 @@ namespace Inkapsling__arv_och_polymorfism.Inkapsling.Tests
         {
             PersonHandler personHandler = new();
 
-            string lastName = "These are supposed to be multiple first names";
+            string lastName = "These are supposed to be multiple last names";
 
             Action act = () => personHandler.CreatePerson(10, "First", lastName, 1.70, 70);
 
