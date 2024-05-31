@@ -1,4 +1,8 @@
-﻿namespace Inkapsling__arv_och_polymorfism
+﻿using Inkapsling__arv_och_polymorfism.Inkapsling;
+using Inkapsling__arv_och_polymorfism.Polymorfism;
+using Inkapsling__arv_och_polymorfism.Arv;
+
+namespace Inkapsling__arv_och_polymorfism
 {
     internal class Program
     {
@@ -94,15 +98,15 @@
                     //    Console.WriteLine(animal.Stats());
                     Console.WriteLine((animal as Dog)!.PetDog());
 
-                    if (animal is IPerson)
+                if (animal is IPerson)
                     (animal as IPerson)!.Talk();
                 else
                     animal.DoSound();
-                
+
                 Console.WriteLine();
             }
 
-            //List<Dog> dogs = new();
+            List<Dog> dogs = new();
 
             //dogs.Add(new Horse(80, 65, true, false));
 
