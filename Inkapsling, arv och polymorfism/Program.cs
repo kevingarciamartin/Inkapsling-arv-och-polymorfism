@@ -121,7 +121,7 @@ List<Dog> dogs = new();
  * 
  * Skriv ut samtliga Animals Stats() genom en foreach loop. Förklara vad det är som händer.
  * 
- * Objektet animal anropar sin Stats()-metod som returnerar en sträng med information om djuret.
+ * Objektet animal anropar den mest specialicerade Stats()-metoden som returnerar en sträng med information om djuret.
  * 
  * 
  * 

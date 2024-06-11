@@ -22,11 +22,7 @@ namespace Inkapsling__arv_och_polymorfism.Arv
 
         public override string Stats()
         {
-            return $"Weight: {Weight}, " +
-                $"Speed: {Speed}, " +
-                $"IsWarmBlooded: {IsWarmBlooded}, " +
-                $"LayEggs: {LayEggs}, " +
-                $"Characteristic: {Characteristic}";
+            return base.Stats() + $", Characteristic: {Characteristic}";
         }
 
         public string PetDog()
